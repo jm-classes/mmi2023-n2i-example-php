@@ -1,0 +1,9 @@
+<h1>Hello World!</h1>
+
+<?php foreach ($posts as $post) : ?>
+    <article>
+        <h1><?= $post->title; ?></h1>
+        <p><?= $post->content; ?></p>
+        <time><?= $post->created_at; ?></time>
+    </article>
+<?php endforeach; ?>
